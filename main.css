@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Montserrat:wght@500;700&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    margin: 25px auto;
+}
+
+.container > img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.wrap_descriptions {
+    padding: 20px;
+}
+.subtitle {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 32px;
+    font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+.description {
+    color: hsl(228, 12%, 48%);
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.wrap_price{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-family: 'Fraunces', 'Arial, Helvetica';
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+}
+.price_cancel {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.btn_addcart {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    display: block;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+        display: flex;
+        width: 600px;
+    }
+    .container > img {
+        border-radius: 10px 0 0 10px;
+        content: url('images/image-product-desktop.jpg');
+    }
+}
